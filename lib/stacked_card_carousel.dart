@@ -76,7 +76,7 @@ class _StackedCardCarouselState extends State<StackedCardCarousel> {
       children: <Widget>[
         _stackedCards(context),
         PageView.builder(
-          scrollDirection: Axis.vertical,
+          scrollDirection: Axis.horizontal,
           controller: widget._pageController,
           itemCount: widget._items.length,
           onPageChanged: widget._onPageChanged,
